@@ -23,8 +23,8 @@ section{padding:84px 0}
 .lead{font-size:19px;color:var(--muted);max-width:640px}
 
 /* botão de compra */
-a.cta, a.cta.hotmart-fb{display:inline-flex !important;align-items:center !important;justify-content:center !important;gap:10px !important;background:var(--green) !important;color:#fff !important;text-decoration:none !important;font-weight:700 !important;font-size:18px !important;padding:18px 30px !important;border-radius:12px !important;box-shadow:0 10px 24px rgba(24,181,122,.35) !important;transition:transform .15s,box-shadow .15s,background .15s !important;border:0 !important;line-height:1.2 !important;width:auto !important;height:auto !important;text-indent:0 !important;background-image:none !important}
-a.cta:hover, a.cta.hotmart-fb:hover{background:var(--green-d) !important;transform:translateY(-1px);box-shadow:0 14px 30px rgba(24,181,122,.4)}
+a.cta{display:inline-flex !important;align-items:center !important;justify-content:center !important;gap:10px !important;background:var(--green) !important;color:#fff !important;text-decoration:none !important;font-weight:700 !important;font-size:18px !important;padding:18px 30px !important;border-radius:12px !important;box-shadow:0 10px 24px rgba(24,181,122,.35) !important;transition:transform .15s,box-shadow .15s,background .15s !important;border:0 !important;line-height:1.2 !important;width:auto !important;height:auto !important;text-indent:0 !important;background-image:none !important}
+a.cta:hover{background:var(--green-d) !important;transform:translateY(-1px);box-shadow:0 14px 30px rgba(24,181,122,.4)}
 .cta .arrow{font-size:20px}
 .secure{font-size:13.5px;color:#8FA3B8;margin-top:12px}
 
@@ -156,7 +156,7 @@ footer p{margin:4px 0}
         <h1>Suporte N1 <em>na Prática</em></h1>
         <p class="sub">O guia direto ao ponto para resolver chamados, falar bem com usuários e se destacar nos primeiros meses de helpdesk.</p>
         <div class="price-line"><span class="now">R$ 19,90</span><span class="inst">à vista ou em até 6x no cartão · preço de lançamento</span></div>
-        <a href="https://pay.hotmart.com/H108661402H?checkoutMode=2" class="cta hotmart-fb hotmart__button-checkout" onclick="return !window.__hmReady">Quero meu guia agora <span class="arrow">→</span></a>
+        <a href="https://pay.hotmart.com/H108661402H" class="cta">Quero meu guia agora <span class="arrow">→</span></a>
         <div class="secure">Pagamento seguro pela Hotmart · acesso imediato ao PDF</div>
         <div class="facts"><span><b>11</b> capítulos</span><span><b>3</b> anexos práticos</span><span><b>5</b> modelos prontos</span><span><b>7 dias</b> de garantia</span></div>
       </div>
@@ -280,7 +280,7 @@ footer p{margin:4px 0}
       </ul>
       <div class="big"><small>R$</small>19,90</div>
       <div class="inst2">à vista ou em até 6x no cartão</div>
-      <a href="https://pay.hotmart.com/H108661402H?checkoutMode=2" class="cta hotmart-fb hotmart__button-checkout" onclick="return !window.__hmReady">Comprar agora <span class="arrow">→</span></a>
+      <a href="https://pay.hotmart.com/H108661402H" class="cta">Comprar agora <span class="arrow">→</span></a>
       <div class="secure">Pagamento seguro processado pela Hotmart</div>
       <div class="guarantee"><div class="seal">7<br>DIAS</div><div><b style="color:var(--navy)">Garantia de 7 dias.</b> Se não gostar, peça o reembolso pela Hotmart dentro do prazo.</div></div>
     </div>
@@ -297,7 +297,7 @@ footer p{margin:4px 0}
     <details><summary>Serve para qualquer empresa?</summary><p>Os exemplos usam Windows e Microsoft 365, o ambiente mais comum nas empresas brasileiras. O método de atendimento e diagnóstico vale para qualquer helpdesk.</p></details>
     <details><summary>Posso parcelar?</summary><p>Sim, em até 6x no cartão de crédito. As formas de pagamento disponíveis aparecem na tela de checkout da Hotmart.</p></details>
     <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Basta pedir o reembolso pela Hotmart dentro do prazo.</p></details>
-    <div class="final"><a href="https://pay.hotmart.com/H108661402H?checkoutMode=2" class="cta hotmart-fb hotmart__button-checkout" onclick="return !window.__hmReady">Quero meu guia por R$ 19,90 <span class="arrow">→</span></a></div>
+    <div class="final"><a href="https://pay.hotmart.com/H108661402H" class="cta">Quero meu guia por R$ 19,90 <span class="arrow">→</span></a></div>
   </div>
 </section>
 
@@ -306,23 +306,8 @@ footer p{margin:4px 0}
   <p>Microsoft, Windows e demais marcas citadas pertencem aos seus titulares. Este produto não tem vínculo com essas empresas.</p>
 </footer>
 
-<div class="sticky"><div class="pr">R$ 19,90<small>ou até 6x</small></div><a href="https://pay.hotmart.com/H108661402H?checkoutMode=2" class="cta hotmart-fb hotmart__button-checkout" onclick="return !window.__hmReady">Comprar agora</a></div>
+<div class="sticky"><div class="pr">R$ 19,90<small>ou até 6x</small></div><a href="https://pay.hotmart.com/H108661402H" class="cta">Comprar agora</a></div>
 
-<!-- Widget de checkout da Hotmart (código fornecido pela Hotmart).
-     Se o script não carregar, os botões levam direto para a página de pagamento. -->
-<script type="text/javascript">
-  function importHotmart(){
-    var imported = document.createElement('script');
-    imported.src = 'https://static.hotmart.com/checkout/widget.min.js';
-    imported.onload = function(){ window.__hmReady = true; };
-    document.head.appendChild(imported);
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css';
-    document.head.appendChild(link);
-  }
-  importHotmart();
-</script>
+
 </body>
 </html>
